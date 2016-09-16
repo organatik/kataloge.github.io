@@ -1,0 +1,670 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+//Custom styles here
+.borders
+  border-left: 70px solid #aaaaaa
+  border-right: 70px solid #aaaaaa
+  padding: 0
+.fix
+  margin: 0
+  padding: 0
+
+//HEADER
+.header
+  border-bottom: 10px solid $blue
+
+.menu_drop
+  li
+    display: block
+.slicknav_menu
+  display: none
+
+
+.nav
+  padding-top: 150px
+  li
+    display: inline-block
+    font-family: 'Open Sans Condensed', sans-serif
+    height: 10px
+
+    &:last-child
+      padding-left: 180px
+      i
+        font-size: 15pt
+    span
+      margin-left: 15px
+      margin-right: 15px
+      vertical-align: middle
+      color: $blue
+      font-weight: bolder
+    a
+      font-size: 15pt
+      font-family: 'Open Sans Condensed', sans-serif
+      font-weight: 300
+      color: $font-color
+      display: inline-block
+      height: 40px
+      text-decoration: none
+      &:hover
+        color: $blue
+        cursor: pointer
+  .menu_drop
+    top: -1000%
+    margin: 0
+    padding: 0
+    position: absolute
+    z-index: 1
+    i
+      padding-right: 5px
+      color: $blue
+    li
+      display: block
+      background-color: #e5e5e5
+      height: 60px
+      width: 250px
+      &:last-child
+        padding: 0
+      &:hover
+        background-color: $blue
+        .sub_l
+          color: white
+        .menu1
+          color: white
+      .menu1
+        display: block
+        padding-top: 17px
+        padding-left: 10px
+        text-decoration: none
+        i
+          padding-right: 5px
+
+.menu_list
+  &:hover
+    .menu_drop
+      top: 100%
+
+
+.menu_drop2
+  height: 300px
+  background-color: #e5e5e5
+  margin: 0
+  padding: 0
+  position: absolute
+  z-index: 1
+  left: -1000%
+  top: 0%
+  border-left: 2px solid $font-color
+  i
+    padding-right: 5px
+    color: $blue
+  li
+    display: block
+    background-color: #e5e5e5
+    height: 60px
+    width: 250px
+    text-decoration: underline
+    padding-left: 30px !important
+    a
+      display: block
+      padding-top: 17px
+      padding-left: 10px
+      text-decoration: none
+    &:hover
+      background-color: $blue
+      i
+        color: white
+      a
+        color: white
+        text-decoration: underline
+.menu_list2
+  position: relative
+  &:hover
+    .menu_drop2
+      top: 0%
+      left: 100%
+
+.search_drop
+  background-color: #e5e5e5
+  margin: 0
+  padding: 0
+  position: absolute
+  z-index: 1
+  left: 65.3%
+  top: -10000%   //448%
+  height: 65px
+  width: 269px
+  text-align: center
+  input
+    width: 200px
+    border: 1px solid $font-color
+    margin-top: 12px
+    margin-left: 20px
+
+
+.out
+  height: 50px
+  padding-left: 20px
+
+.search_list
+    font-size: 26px
+    height: 50px
+    &:hover
+      .search_drop
+        top: 104%
+      .out
+        color: $blue
+
+
+
+
+
+
+
+
+
+.navi
+  padding-top: 17px
+  padding-left: 10px
+  &:hover
+    color: white !important
+
+
+
+.right_nav
+  float: right
+  li
+    display: inline-block
+    font-size: 13pt
+    font-family: 'Open Sans Condensed', sans-serif
+    font-weight: 300
+    padding-right: 40px
+    &:first-child
+      padding-right: 15px
+      position: relative
+      &:hover
+        .sprache
+          right: -15%
+          top: 100%
+        color: $blue
+        cursor: pointer
+    &:nth-child(2)
+      &:hover
+        color: $blue
+        cursor: pointer
+    i
+      padding-right: 5px
+.sprache
+  position: absolute
+  top: -1000%
+  z-index: 1
+  border: 1px solid  $font-color
+  padding-left: 22px
+  li
+    padding-right: 15px
+    display: block
+    a
+      color: $font-color
+      &:hover
+        color: $blue
+
+
+
+                                    //Slider
+.slider
+  padding: 0
+.text
+  height: 220px
+  width: 450px
+  background-color: rgba(0, 138, 201,0.5 )
+  position: absolute
+  top: 10%
+  left: 8%
+  font-size: 18pt
+  color: white
+  font-family: 'Open Sans Condensed', sans-serif
+  line-height: 2
+  padding-left: 40px
+  letter-spacing: 5px
+  p
+    margin-top: 35px
+  span
+    font-size: 30pt
+
+.text2
+  height: 220px
+  width: 450px
+  background-color: rgba(0, 138, 201,0.6 )
+  position: absolute
+  top: 10%
+  left: 15.2%
+  font-size: 18pt
+  color: white
+  font-family: 'Open Sans Condensed', sans-serif
+  line-height: 2
+  padding-left: 40px
+  letter-spacing: 5px
+  p
+    margin-top: 35px
+  span
+    font-size: 30pt
+
+.text3
+  height: 220px
+  width: 450px
+  background-color: rgba(0, 138, 201,0.7 )
+  position: absolute
+  top: 10%
+  left: 22.3%
+  font-size: 18pt
+  color: white
+  font-family: 'Open Sans Condensed', sans-serif
+  line-height: 2
+  padding-left: 40px
+  letter-spacing: 5px
+  p
+    margin-top: 35px
+  span
+    font-size: 30pt
+
+.text4
+  height: 220px
+  width: 450px
+  background-color: rgba(0, 138, 201,0.7 )
+  position: absolute
+  top: 10%
+  left: 29.5%
+  font-size: 18pt
+  color: white
+  font-family: 'Open Sans Condensed', sans-serif
+  line-height: 2
+  padding-left: 40px
+  letter-spacing: 5px
+  p
+    margin-top: 35px
+  span
+    font-size: 30pt
+.text5
+  height: 220px
+  width: 450px
+  background-color: rgba(0, 138, 201,0.5 )
+  position: absolute
+  top: 10%
+  left: 36.7%
+  font-size: 18pt
+  color: white
+  font-family: 'Open Sans Condensed', sans-serif
+  line-height: 2
+  padding-left: 40px
+  letter-spacing: 5px
+  p
+    margin-top: 35px
+  span
+    font-size: 30pt
+
+
+
+                                          //CONTENT
+
+.content
+  font-size: 15pt
+  font-family: 'Open Sans Condensed', sans-serif
+  font-weight: 300
+
+.contact
+  font-family: "Open Sans Condensed", sans-serif
+  font-size: 15pt
+  ul
+    li
+      display: block
+      background-color: rgb(229, 229, 229)
+      &:first-child
+        background-color: $blue
+        font-weight: bold
+        padding-left: 20px
+        color: white
+      &:hover:not(:nth-child(1))
+        color: $blue
+        text-decoration: underline
+        cursor: pointer
+
+      height: 60px
+      padding-top: 15px
+      i
+        padding-left: 20px
+        color: $blue
+      span
+        padding-left: 30px
+
+.animals
+  i
+    padding-right: 10px
+    color: $blue
+  a
+    float: right
+    margin-top: 30px
+    color: $font-color
+    font-weight: bolder
+    font-size: 19pt
+    &:hover
+      color: $blue
+  h2
+    font-size: 19pt
+    font-weight: 300
+    color: $font-color
+    border-bottom: 5px solid $blue
+    width: 210px
+  ul
+    font-size: 0
+    padding: 0
+    margin-top: 10px
+    li
+      font-size: 12pt
+      display: inline-block
+      width: 142.7px
+      height: 90px
+      background-color: rgb(229, 229, 229)
+
+
+
+
+.pig
+  background: url("/img/pig.png") no-repeat center
+  background-size: 80px
+  &:hover
+    background: url(/img/Tier_Rind_weiss.png) no-repeat center
+    background-size: cover
+    cursor: pointer
+
+.rind
+  background: url(/img/Icon_Rind.png) no-repeat center
+  background-size: 80px
+  &:hover
+    background: url(/img/Tier_Rind_weiss.png) no-repeat center
+    background-size: cover
+    cursor: pointer
+
+.horse
+  background: url("/img/horse.png") no-repeat center
+  background-size: 80px
+  &:hover
+    background: url(/img/Tier_Rind_weiss.png) no-repeat center
+    background-size: cover
+    cursor: pointer
+
+.hund
+  background: url("/img/hund.png") no-repeat center
+  background-size: 70px
+  &:hover
+    background: url(/img/Tier_Rind_weiss.png) no-repeat center
+    background-size: cover
+    cursor: pointer
+
+.schaf
+  background: url("/img/schaf.png") no-repeat center
+  background-size: 100px
+  &:hover
+    background: url(/img/Tier_Rind_weiss.png) no-repeat center
+    background-size: cover
+    cursor: pointer
+
+.ziegenbock
+  background: url("/img/ziegenbock.png") no-repeat center
+  background-size: 80px
+  &:hover
+    background: url(/img/Tier_Rind_weiss.png) no-repeat center
+    background-size: cover
+    cursor: pointer
+
+.camel
+  .ziegenbock
+  background: url("/img/camel.png") no-repeat center
+  background-size: 80px
+  &:hover
+    background: url(/img/Tier_Rind_weiss.png) no-repeat center
+    background-size: cover
+    cursor: pointer
+
+
+
+                                      //NEWS
+.news
+  clear: left
+  i
+    padding-right: 10px
+    color: $blue
+  a
+    float: right
+    color: $font-color
+    font-weight: bolder
+    font-size: 19pt
+    &:hover
+      color: $blue
+
+  p
+    font-size: 15pt
+    font-family: 'Open Sans Condensed', sans-serif
+  h2
+    margin-left: 15px
+    font-size: 19pt
+    font-weight: 300
+    color: $font-color
+    border-bottom: 5px solid $blue
+    width: 210px
+
+                                              //Events&Media
+
+
+.evemed
+  clear: both
+  .events
+    overflow: hidden
+    a
+      margin-top: 28px
+  a
+    margin-top: 14px
+    float: right
+    color: $font-color
+    font-weight: bolder
+    font-size: 19pt
+    &:hover
+      color: $blue
+    i
+      padding-right: 10px
+      color: $blue
+  .event_1
+    background-color:  rgb(229, 229, 229)
+    margin-left: 15px
+    padding-left: 0
+    height: 172px
+    ul
+      padding-top: 15px
+  .event_2
+    background-color:  rgb(229, 229, 229)
+    margin-left: 15px
+    padding-left: 0
+    margin-top: 20px
+    span
+      padding-left: 20px
+  img
+    padding-top: 35px
+  h2
+    font-size: 19pt
+    font-weight: 300
+    color: $font-color
+    border-bottom: 5px solid $blue
+    width: 210px
+  ul
+    list-style-type: none
+    padding-left: 20px
+    li
+      font-size: 19pt
+      font-family: 'Open Sans Condensed', sans-serif
+      &:nth-child(2)
+        font-weight: bold
+        &:hover
+          color: $blue
+          text-decoration: underline
+          cursor: pointer
+        i
+          color: $blue
+          padding-right: 5px
+
+.mediatek
+  li
+    height: 76px
+    margin-bottom: 20px
+    background-color: rgb(229, 229, 229)
+    font-weight: bold
+    padding-top: 19px
+    padding-left: 20px
+    &:last-child
+      margin-bottom: 0
+    i
+      color: $blue
+      padding-right: 5px
+    &:hover
+      color: $blue
+      text-decoration: underline
+      cursor: pointer
+
+
+
+                                        //FOOTER
+
+
+.footer
+  margin-top: 610px
+  background-color: $blue
+  height: 265px
+  color: white
+  clear: both
+  h3
+    margin-bottom: 5px
+  img
+    float: right
+    padding-top: 15px
+    padding-right: 15px
+  ul
+    list-style-type: none
+    font-size: 15pt
+    font-family: 'Open Sans Condensed', sans-serif
+    font-weight: 300
+    padding-left: 0
+  li
+    a
+      color: white
+      padding-left: 5px
+
+  .footer_bot
+    padding-top: 40px
+    ul
+      li
+        padding-right: 40px
+        display: inline-block
+        &:not(:last-child)
+          border-right: 1px solid white
+        &:not(:first-child)
+          padding-left: 40px
+
+
+                                              //АДАПТИВНОСТЬ МЕНЮ и Внешний вид
+#menu2
+  display: none
+.slicknav_menu
+  a
+    color: $font-color
+    font-family: "Open Sans Condensed",sans-serif
+    padding-top: 10px
+    padding-bottom: 10px
+    font-size: 15pt
+.slicknav_nav
+  .lvl_1
+    li
+      &:hover
+        background: rgb(0, 138, 201 )
+        color: #fff
+  > li
+    .fa-caret-left
+      display: none
+    &:hover
+      &:not(:nth-child(7))
+        &:not(:last-child)
+          &:not(:first-child)
+            background: rgb(0, 138, 201 )
+            color: #fff
+            .fa-caret-left
+              display: inline
+              padding-right: 5px
+            .slicknav_arrow
+              display:  none
+            a:hover
+              background: rgb(0, 138, 201 )
+              color: white
+              font-weight: bold
+
+    &:nth-child(1)
+      a
+        padding-top: 14px
+        border-bottom: 1px solid $font-color
+        display: inline-block
+        width: 188px
+        margin-bottom: 15px
+        padding-bottom: 15px
+        border-radius: 0
+        &:hover
+          background-color: rgb(229, 229, 229)
+          color: $blue
+
+    &:nth-child(7)
+      a
+        border-radius: 0
+        display: inline-block
+        border-top: 1px solid $font-color
+        width: 189px
+        margin-top: 15px
+        padding-top: 15px
+        &:hover
+          color: $blue
+          text-decoration: underline
+    &:nth-child(8)
+      text-align: center
+      position: relative
+      color: $font-color
+      &:hover
+        color: $blue
+      i
+        position: absolute
+        left: 80%
+        top: 17%
+      input
+        margin-bottom: 10px
+        &:hover
+          cursor: pointer
+
+.blur
+  opacity: 0.4
+  position: absolute
+  top: 0
+  left: 0
+  background-color: black
+  width: 100%
+  z-index: 1000
+  height: 3000px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media"
+
