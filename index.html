@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="libs/slider/flexslider.css">
+	<link rel="stylesheet" href="css/slider.css">
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -53,7 +54,7 @@
 	<div class="container borders">
 		<div class="row fix">
 			<div class="header clearfix">
-				<div class="col-lg-3 col-md-3 col-sm-3 logo">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 logo">
 					<img src="img/logo.png" alt="LOGO">
 				</div>
 				<div class="col-lg-9 col-md-9 navigation ">
@@ -110,14 +111,24 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3 adaptive_menu">
+				<div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-xs-6 adaptive_menu hidden-lg">
 					<ul id="menu2">
-						<li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i> Sprache</a></li>
-						<li><i class="fa fa-caret-left" aria-hidden="true"></i>Parent 1
+						<li class="sprache_down_li">
+							<span class="sprache_down"><i class="fa fa-globe" aria-hidden="true">
+						</i> Sprache</span></li>
+						<ul class="SPR">
+							<li><a href="#">Deutsch</a></li>
+							<li><a href="#">English</a></li>
+							<li><a href="#">Español</a></li>
+							<li><a href="#">Português</a></li>
+							<li><a href="#">Pусский</a></li>
+							<li><a href="#">中国</a></li>
+						</ul>
+						<li><i class="fa fa-caret-left arrow_l" aria-hidden="true"></i>Parent 1
 							<ul class="lvl_1">
 								<li><a href="#">item 3</a></li>
-								<li>Parent 3
-									<ul>
+								<li><i class="fa fa-caret-left arrow_l" aria-hidden="true"></i>Parent 3
+									<ul class="lvl_2">
 										<li><a href="#">item 8</a></li>
 										<li><a href="#">item 9</a></li>
 										<li><a href="#">item 10</a></li>
@@ -126,7 +137,7 @@
 								<li><a href="#">item 4</a></li>
 							</ul>
 						</li>
-						<li><i class="fa fa-caret-left" aria-hidden="true"></i>Parent 2
+						<li><i class="fa fa-caret-left arrow_l" aria-hidden="true"></i>Parent 2
 							<ul class="lvl_1">
 								<li><a href="#">item 5</a></li>
 								<li><a href="#">item 6</a></li>
@@ -135,11 +146,11 @@
 						</li>
 						<li><a href="#">News</a></li>
 						<li><a href="#">Events</a></li>
-						<li>Parent 1
+						<li><i class="fa fa-caret-left arrow_l" aria-hidden="true"></i>Parent 1
 							<ul class="lvl_1">
 								<li><a href="#">item 3</a></li>
-								<li>Parent 3
-									<ul>
+								<li><i class="fa fa-caret-left arrow_l" aria-hidden="true"></i>Parent 3
+									<ul class="lvl_2">
 										<li><a href="#">item 8</a></li>
 										<li><a href="#">item 9</a></li>
 										<li><a href="#">item 10</a></li>
@@ -193,11 +204,11 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-lg-offset-1 content">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-1 content">
 				<p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur consequatur consequuntur corporis dicta dolorem dolorum est eum facere fugit harum in iste maiores, maxime minima nam nemo nulla repellat suscipit voluptatibus? Aliquid, amet consectetur deleniti et fugiat id itaque officiis quisquam, tempora vel voluptate?</p>
 			</div>
-			<div class="col-lg-4 col-md-4 contact">
+			<div class="col-lg-4 col-md-6 col-sm-6 contact">
 				<ul>
 					<li>KONTAKTIEREN SIE UNS</li>
 					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><span>Ihr Ansprechpartner</span></li>
@@ -205,9 +216,40 @@
 					<li><i class="fa fa-map-marker" aria-hidden="true"></i><span> Niederlassungen weltweit</span></li>
 				</ul>
 			</div>
-			<div class="col-md-12 col-lg-12 animals">
+			<div class="col-md-12 col-lg-12 animals" >
 				<h2>Produktauswahl</h2>
-				<ul>
+				<div class="slider2 hidden-lg">
+					<div class="slide-list2">
+						<div class="slide-wrap2">
+							<div class="slide-item2 slide-item2_pig">
+
+							</div>
+							<div class="slide-item2 slide-item2_rind">
+
+							</div>
+							<div class="slide-item2 slide-item2_horse">
+
+							</div>
+							<div class="slide-item2 slide-item2_hund">
+
+							</div>
+							<div class="slide-item2 slide-item2_schaf">
+
+							</div>
+							<div class="slide-item2 slide-item2_ziegenbock">
+
+							</div>
+							<div class="slide-item2 slide-item2_camel">
+
+							</div>
+
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div name="prev" class="navy2 prev-slide2"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
+					<div name="next" class="navy2 next-slide2"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+				</div>
+				<ul class="hidden-md hidden-sm">
 					<li class="pig"></li>
 					<li class="rind"></li>
 					<li class="horse"></li>
@@ -220,53 +262,53 @@
 			</div>
 			<div class="news">
 				<h2>News</h2>
-				<div class="col-md-6 col-lg-6">
-					<img src="img/news1.png" alt="news">
+				<div class="col-md-6 col-lg-6 col-sm-6">
+					<div class="news2"></div>
 					<p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolorum earum eveniet ipsam nam quasi sit vitae? Ex fuga modi quo saepe voluptas! Cumque, modi.</p>
 					<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Lesen Sie mehr</a>
 				</div>
-				<div class="col-md-6 col-lg-6">
-					<img src="img/news1.png" alt="news">
+				<div class="col-md-6 col-lg-6 col-sm-6">
+					<div class="news2"></div>
 					<p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolorum earum eveniet ipsam nam quasi sit vitae? Ex fuga modi quo saepe voluptas! Cumque, modi.</p>
 					<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Lesen Sie mehr</a>
 				</div>
 			</div>
 			<div class="evemed">
-				<div class="col-md-6 col-lg-6 events">
+				<div class="col-md-6 col-lg-6 col-sm-6 events">
 					<h2>Events</h2>
 					<div class="row">
-						<div class="col-md-12 col-lg-12 event_1">
+						<div class="col-md-12 col-lg-12 col-sm-12 event_1">
 							<div class="row">
-								<div class="col-md-8 col-lg-8">
+								<div class="col-md-12 col-lg-8 col-sm-12">
 									<ul>
 										<li>16.07-19.07.2016</li>
 										<li><i class="fa fa-angle-right" aria-hidden="true"></i>World Pork Expo</li>
 										<li>San Diego, USA</li>
 									</ul>
 								</div>
-								<div class="col-md-4 col-lg-4">
-									<img src="img/naab.png" alt="">
+								<div class="col-md-4 col-lg-4 ">
+									<img src="img/naab.png" alt="naab" class="hidden-md hidden-sm">
 								</div>
 							</div>
 						</div>
-						<div class="col-md-12 col-lg-12 event_2">
+						<div class="col-md-12 col-lg-12 col-sm-12 event_2">
 							<div class="row">
-								<div class="col-md-8 col-lg-8">
+								<div class="col-md-12 col-lg-8 col-sm-12">
 									<ul>
 										<li>16.07-19.07.2016</li>
-										<li><i class="fa fa-angle-right" aria-hidden="true"></i>International Symposium on <span>Stallion Reproduction</span></li>
+										<li><i class="fa fa-angle-right" aria-hidden="true"></i>International Symposium on Stallion Reproduction</li>
 										<li>San Diego, USA</li>
 									</ul>
 								</div>
 								<div class="col-md-4 col-lg-4">
-									<img src="img/naab.png" alt="">
+									<img src="img/naab.png" alt="" class="hidden-md hidden-sm" >
 								</div>
 							</div>
 						</div>
 						<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>All Events</a>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-6 mediatek">
+				<div class="col-md-6 col-lg-6 col-sm-6 mediatek">
 					<h2>Mediathek</h2>
 					<ul>
 						<li><span><i class="fa fa-angle-right" aria-hidden="true"></i>Kataloge</span></li>
@@ -278,34 +320,38 @@
 				</div>
 			</div>
 			<div class="footer">
-				<div class="col-md-3 col-lg-3 ">
+				<div class="col-md-3 col-lg-3 col-sm-4 ">
 					<ul>
 						<h3>Unternehmen</h3>
 						<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Minitube International</a></li>
 						<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#"> Simmet Preis</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3 col-lg-3 ">
+				<div class="col-md-3 col-lg-3 col-sm-4 ">
 					<ul>
 						<h3>Karriere</h3>
 						<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Arbeiten bei Minitüb</a></li>
 						<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Jobangebote</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3 col-lg-3 ">
+				<div class="col-md-3 col-lg-3 col-sm-4 ">
 					<ul>
 						<h3>Kontakt</h3>
 						<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Schreiben Sie uns</a></li>
 					</ul>
 				</div>
-				<img src="img/iso.png" alt="ISO">
-				<div class="col-md-12 col-lg-12 footer_bot">
+				<img src="img/iso.png" alt="ISO" class="hidden-sm">
+				<div class="col-md-12 col-lg-12 col-sm-9 footer_bot">
 					<ul>
 						<li><a href="#">AGB</a></li>
 						<li><a href="#">Impressum</a></li>
 						<li><a href="#">Datenschutz</a></li>
 						<li><a href="#">Sitemap</a></li>
+						<!--<li><img src="img/iso.png" alt="ISO"</li>-->
 					</ul>
+				</div>
+				<div class="col-sm-3 hidden-lg">
+					<img src="img/iso.png" alt="ISO">
 				</div>
 			</div>
 		</div>

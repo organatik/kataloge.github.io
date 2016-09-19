@@ -11,6 +11,8 @@
   margin: 0
   padding: 0
 
+#menu2
+  display: none
 //HEADER
 .header
   border-bottom: 10px solid $blue
@@ -18,8 +20,6 @@
 .menu_drop
   li
     display: block
-.slicknav_menu
-  display: none
 
 
 .nav
@@ -305,6 +305,7 @@
 
 
 
+
                                           //CONTENT
 
 .content
@@ -312,6 +313,10 @@
   font-family: 'Open Sans Condensed', sans-serif
   font-weight: 300
 
+.news2
+  height: 300px
+  background-image: url(/img/news1.png)
+  background-size: cover
 .contact
   font-family: "Open Sans Condensed", sans-serif
   font-size: 15pt
@@ -403,7 +408,7 @@
 
 .schaf
   background: url("/img/schaf.png") no-repeat center
-  background-size: 100px
+  background-size: 120px
   &:hover
     background: url(/img/Tier_Rind_weiss.png) no-repeat center
     background-size: cover
@@ -569,80 +574,11 @@
           padding-left: 40px
 
 
-                                              //АДАПТИВНОСТЬ МЕНЮ и Внешний вид
-#menu2
-  display: none
-.slicknav_menu
-  a
-    color: $font-color
-    font-family: "Open Sans Condensed",sans-serif
-    padding-top: 10px
-    padding-bottom: 10px
-    font-size: 15pt
-.slicknav_nav
-  .lvl_1
-    li
-      &:hover
-        background: rgb(0, 138, 201 )
-        color: #fff
-  > li
-    .fa-caret-left
-      display: none
-    &:hover
-      &:not(:nth-child(7))
-        &:not(:last-child)
-          &:not(:first-child)
-            background: rgb(0, 138, 201 )
-            color: #fff
-            .fa-caret-left
-              display: inline
-              padding-right: 5px
-            .slicknav_arrow
-              display:  none
-            a:hover
-              background: rgb(0, 138, 201 )
-              color: white
-              font-weight: bold
 
-    &:nth-child(1)
-      a
-        padding-top: 14px
-        border-bottom: 1px solid $font-color
-        display: inline-block
-        width: 188px
-        margin-bottom: 15px
-        padding-bottom: 15px
-        border-radius: 0
-        &:hover
-          background-color: rgb(229, 229, 229)
-          color: $blue
 
-    &:nth-child(7)
-      a
-        border-radius: 0
-        display: inline-block
-        border-top: 1px solid $font-color
-        width: 189px
-        margin-top: 15px
-        padding-top: 15px
-        &:hover
-          color: $blue
-          text-decoration: underline
-    &:nth-child(8)
-      text-align: center
-      position: relative
-      color: $font-color
-      &:hover
-        color: $blue
-      i
-        position: absolute
-        left: 80%
-        top: 17%
-      input
-        margin-bottom: 10px
-        &:hover
-          cursor: pointer
-
+.on
+  display: block !important
+  z-index: 10
 .blur
   opacity: 0.4
   position: absolute

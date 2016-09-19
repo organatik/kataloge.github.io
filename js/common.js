@@ -6,21 +6,25 @@ $(function() {
     var combinedMenu = $('#menu2');
     combinedMenu.slicknav({
         label: '',
-        duration: 300,
+        duration: 100,
         prependTo:'.adaptive_menu',
         closeOnClick: true,
-        closedSymbol: 123,
-        openedSymbol: 456
-        // parentTag : 'a',
+        parentTag : 'a',
+
     });
     //BLUR
     $('.slicknav_btn').click(function () {
         $('#blur').toggleClass('blur','addOrRemove')
 
     });
-    $('.slicknav_item').click(function () {
-        $(this).css('color','white')
+    $('.slicknav_item, .slicknav_open').click(function () {
+        $(this).toggleClass('open_menu','addOrRemove');
+        $('.arrow_l',this).toggleClass('arr_l', 'addOrRemove');
     });
+    $('.sprache_down').click(function () {
+        $('.slicknav_menu .SPR').toggleClass('on','addOrRemove');
 
-    
+    })
+
+
 });

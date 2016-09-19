@@ -57,9 +57,9 @@
   clear: both;
   position: absolute;
   z-index: 2000;
-  width: 200px;
+  width: 300px;
   top: 105%;
-  left: 48%;
+  left: 25%;
   border:1px solid rgb(83,83,83) ;}
   .slicknav_nav ul {
     display: block;  }
@@ -68,7 +68,7 @@
     background-color: #e5e5e5;}
   .slicknav_nav .slicknav_arrow {
     font-size: 0.8em;
-    margin: 0 0 0 4.4em;
+    margin: 0 0 0 8.4em;
     color: rgb(0, 138, 201 ); }
   .slicknav_nav .slicknav_item {
     cursor: pointer; }
