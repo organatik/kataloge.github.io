@@ -25,6 +25,9 @@ $(function() {
         $('.slicknav_menu .SPR').toggleClass('on','addOrRemove');
 
     })
-
+    $('.footer_list').click(function () {
+        $('.footer_drop',this).toggleClass('footer_drop_on','addOrRemove');
+        $('.fa-caret-down',this).toggleClass('fa-caret-up ','addOrRemove');
+    })
 
 });
