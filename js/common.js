@@ -1,7 +1,4 @@
 $(function() {
-    $('.flexslider').flexslider({
-        animation: "slide"
-    });
 	// menu
     var combinedMenu = $('#menu2');
     combinedMenu.slicknav({
